@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head> <!-- Cabeça do HTML -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/main.css">
+        <title>Netflix Clone</title>
+
+        <!-- owl css -->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
+        <!-- Responsividade -->
+        <link rel="stylesheet" href="style/responsive.css">
+    </head>
+
+    <body> <!-- Corpo do HTML (Aparece no navegador) -->
+        <!-- Cada parte do HTML é entendido como um quadradinho (Por isso usamos a div) -->
+    
+        <header>
+            <div class="container">
+                <h2 class="logo">NETFLIX</h2>
+                
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Series</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentário</a>
+                </nav>
+            </div>
+        
+        </header>
+
+        <main> <!-- as div's criadas herdam do pai, mas as mais internas não herdam e vem como padrão com display:block -->
+            <div class="filme-principal">
+                <div class="container">
+                    <h3 class="titulo">Dr. House</h3>
+                    <p class="descricao">Um médico dissidente e anti-social, que se especializou em medicina de diagnóstico.</p>
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/1917.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Bloodshot.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Coringa.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Dark.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Grey's_Anatomy.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Greyhound.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Lucífer.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Riverdale.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Scorpion.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/The_Good_Doctor.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://kit.fontawesome.com/b9579ae468.js" crossorigin="anonymous"></script>
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/owl/setup.js"></script>
+    </body>
+
+</html>
